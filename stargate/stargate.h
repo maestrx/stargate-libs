@@ -11,7 +11,7 @@
 // ----------------------------------------
 
 // indicate if usign real or fake gate
-#define FAKE_GATE 1
+//#define FAKE_GATE 1
 
 // I2C debug on Gate&MP3
 #define DEBUG_I2C false
@@ -136,7 +136,7 @@ int DHD_Chevron_LED[] = {2,3,4,5,6,7,8,9,};  // LED pin array
     const int Ramp_LED = 16;
     const int Gate_Chevron_LED[] = {40,41,42,43,44,45,46,47};
   #else
-    const int Calibrate_LED = 16;
+    const int Calibrate_LED = 15;
     const int Calibrate_Resistor = A8;
     const int Ramp_LED = 51;
     const int Gate_Chevron_LED[] = {47,45,43,41,39,37,35,33,31};
