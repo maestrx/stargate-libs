@@ -1,3 +1,6 @@
+// version 0.1, 1.4.2025
+// version 0.2, 6.4.2025
+
 // ----------------------------------------
 // COMMON
 // ----------------------------------------
@@ -45,8 +48,9 @@ struct i2c_message {
 #define ACTION_NOOP 99
 #define ACTION_NODATA 255  // indicates that no data were recieved over the I2C bus
 
+
 // ----------------------------------------
-// GATE definitions
+// DHD definitions
 // ----------------------------------------
 
 // debug options
@@ -54,6 +58,13 @@ struct i2c_message {
 #define DEBUG_I2C_MP3_DEV if(DEBUG_I2C_MP3)Serial
 #define DEBUG_I2C_GATE false
 #define DEBUG_I2C_GATE_DEV if(DEBUG_I2C_GATE)Serial
+
+// ----------------------------------------
+// GATE definitions
+// ----------------------------------------
+
+#define DEBUG_I2C false
+#define DEBUG_I2C_DEV if(DEBUG_I2C)Serial
 
 // set the number of motor steps for the gate and chevron
 #ifdef FAKE_GATE
