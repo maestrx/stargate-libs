@@ -103,7 +103,7 @@ DHD -> Gate: [ACTION_GATE_RESET, 0] reset dial/close gate
 // ----------------------------------------
 
 #define KEYPAD_INPUT A0
-#define KEYPRESS_TIMEOUT 60000 // timeout for keypress action
+#define KEYPRESS_TIMEOUT 120000 // timeout for keypress action
 int DHD_Chevron_LED[] = {2,3,4,5,6,7,8,9,};  // LED pin array
 #ifdef FAKE_GATE
   #define KEYPRESS_RAW_THRESHOLD 900
@@ -116,7 +116,7 @@ int DHD_Chevron_LED[] = {2,3,4,5,6,7,8,9,};  // LED pin array
 // GATE definitions
 // ----------------------------------------
 
-#define GATE_ACTION_TIMEOUT 60000 // timeout for gate actions
+#define GATE_ACTION_TIMEOUT 120000 // timeout for gate actions
 
 // set the number of motor steps for the gate and chevron
 #ifdef FAKE_GATE
