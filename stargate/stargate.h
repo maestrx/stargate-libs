@@ -55,9 +55,6 @@ struct i2c_message {
 #define DEBUG_I2C_GATE false
 #define DEBUG_I2C_GATE_DEV if(DEBUG_I2C_GATE)Serial
 
-// set motor speed, 1000 is max speed
-#define SPEED_STEPS_PER_SECOND 1000
-
 // set the number of motor steps for the gate and chevron
 #ifdef FAKE_GATE
   #define GATE_SYMBOLS 8
