@@ -14,20 +14,16 @@
 //#define FAKE_GATE 1
 
 // I2C debug on Gate&MP3
-#define DEBUG_I2C false
+#define DEBUG_I2C tr
 #define DEBUG_I2C_DEV if(DEBUG_I2C)Serial
 
 // I2C debug on DHD
-#define DEBUG_I2C_MP3 false
+#define DEBUG_I2C_MP3 true
 #define DEBUG_I2C_MP3_DEV if(DEBUG_I2C_MP3)Serial
-#define DEBUG_I2C_GATE false
+#define DEBUG_I2C_GATE true
 #define DEBUG_I2C_GATE_DEV if(DEBUG_I2C_GATE)Serial
 
-#ifdef FAKE_GATE
-  #define MP3_VOLUME 15 //Set volume value. From 0 to 30
-#else
-  #define MP3_VOLUME 30 //Set volume value. From 0 to 30
-#endif
+#define MP3_VOLUME 15 //Set volume value. From 0 to 30
 
 // https://forum.arduino.cc/t/sending-struct-over-i2c/886392/30
 // https://github.com/EinarArnason/ArduinoQueue
@@ -105,11 +101,7 @@ DHD -> Gate: [ACTION_GATE_RESET, 0] reset dial/close gate
 #define KEYPAD_INPUT A0
 #define KEYPRESS_TIMEOUT 120000 // timeout for keypress action
 int DHD_Chevron_LED[] = {2,3,4,5,6,7,8,9,};  // LED pin array
-#ifdef FAKE_GATE
-  #define KEYPRESS_RAW_THRESHOLD 900
-#else
-  #define KEYPRESS_RAW_THRESHOLD 950
-#endif
+#define KEYPRESS_RAW_THRESHOLD 950
 
 
 // ----------------------------------------
@@ -119,28 +111,16 @@ int DHD_Chevron_LED[] = {2,3,4,5,6,7,8,9,};  // LED pin array
 #define GATE_ACTION_TIMEOUT 120000 // timeout for gate actions
 
 // set the number of motor steps for the gate and chevron
-#ifdef FAKE_GATE
-  #define GATE_SYMBOLS 8
-  #define GATE_CHEVRON_STEPS 810
-#else
-  #define GATE_SYMBOLS 39
-  #define GATE_CHEVRON_STEPS 246
-#endif
+#define GATE_SYMBOLS 39
+#define GATE_CHEVRON_STEPS 246
 #define GATE_CHEVRON_OPEN_STEPS 8
 
 // define LED PINs
 #if defined(ARDUINO_AVR_MEGA2560)
-  #ifdef FAKE_GATE
-    const int Calibrate_LED = 15;
-    const int Calibrate_Resistor = A8;
-    const int Ramp_LED = 16;
-    const int Gate_Chevron_LED[] = {40,41,42,43,44,45,46,47};
-  #else
-    const int Calibrate_LED = 15;
-    const int Calibrate_Resistor = A8;
-    const int Ramp_LED = 51;
-    const int Gate_Chevron_LED[] = {47,45,43,41,39,37,35,33,31};
-  #endif
+  const int Calibrate_LED = 15;
+  const int Calibrate_Resistor = A8;
+  const int Ramp_LED = 51;
+  const int Gate_Chevron_LED[] = {47,45,43,41,39,37,35,33,31};
 #endif
 
 // ----------------------------------------
