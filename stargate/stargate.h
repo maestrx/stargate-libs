@@ -14,7 +14,7 @@
 //#define FAKE_GATE 1
 
 // I2C debug on Gate&MP3
-#define DEBUG_I2C tr
+#define DEBUG_I2C false
 #define DEBUG_I2C_DEV if(DEBUG_I2C)Serial
 
 // I2C debug on DHD
