@@ -14,7 +14,7 @@
 //#define FAKE_GATE 1
 
 // I2C debug on Gate&MP3
-#define DEBUG_I2C false
+#define DEBUG_I2C true
 #define DEBUG_I2C_DEV if(DEBUG_I2C)Serial
 
 // I2C debug on DHD
@@ -113,7 +113,7 @@ int DHD_Chevron_LED[] = {2,3,4,5,6,7,8,9,};  // LED pin array
 // set the number of motor steps for the gate and chevron
 #define GATE_SYMBOLS 39
 #define GATE_CHEVRON_STEPS 246
-#define GATE_CHEVRON_OPEN_STEPS 8
+#define GATE_CHEVRON_OPEN_STEPS 11
 
 // define LED PINs
 #if defined(ARDUINO_AVR_MEGA2560)
