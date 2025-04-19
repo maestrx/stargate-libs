@@ -23,8 +23,6 @@
 #define DEBUG_I2C_GATE false
 #define DEBUG_I2C_GATE_DEV if(DEBUG_I2C_GATE)Serial
 
-#define MP3_VOLUME 15 //Set volume value. From 0 to 30
-
 // https://forum.arduino.cc/t/sending-struct-over-i2c/886392/30
 // https://github.com/EinarArnason/ArduinoQueue
 struct i2c_message {
@@ -93,6 +91,9 @@ DHD -> Gate: [ACTION_GATE_RESET, 0] reset dial/close gate
 #define ACTION_SOUND_STOP 50
 #define ACTION_NOOP 99
 #define ACTION_NODATA 255  // indicates that no data were recieved over the I2C bus
+
+#define MP3_VOLUME 25 //Set volume value. From 0 to 30
+
 
 // ----------------------------------------
 // DHD definitions
