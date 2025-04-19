@@ -14,13 +14,13 @@
 //#define FAKE_GATE 1
 
 // I2C debug on Gate&MP3
-#define DEBUG_I2C true
+#define DEBUG_I2C false
 #define DEBUG_I2C_DEV if(DEBUG_I2C)Serial
 
 // I2C debug on DHD
-#define DEBUG_I2C_MP3 true
+#define DEBUG_I2C_MP3 false
 #define DEBUG_I2C_MP3_DEV if(DEBUG_I2C_MP3)Serial
-#define DEBUG_I2C_GATE true
+#define DEBUG_I2C_GATE false
 #define DEBUG_I2C_GATE_DEV if(DEBUG_I2C_GATE)Serial
 
 #define MP3_VOLUME 15 //Set volume value. From 0 to 30
