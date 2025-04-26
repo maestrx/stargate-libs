@@ -105,6 +105,8 @@ DHD -> Gate: [ACTION_GATE_RESET, 0] reset dial/close gate
 int DHD_Chevron_LED[] = {2,3,4,5,6,7,8,9,};  // LED pin array
 #define KEYPRESS_RAW_THRESHOLD 950
 
+#define DHD_DELAY_RESET_BLINK_DURATION 1000 // duration of the reset blink in ms
+
 
 // ----------------------------------------
 // GATE definitions
