@@ -92,6 +92,7 @@ DHD -> Gate: [ACTION_GATE_RESET, 0] reset dial/close gate
 #define ACTION_NOOP 99
 #define ACTION_NODATA 255  // indicates that no data were recieved over the I2C bus
 
+
 #define MP3_VOLUME 25 //Set volume value. From 0 to 30
 
 
@@ -110,6 +111,14 @@ int DHD_Chevron_LED[] = {2,3,4,5,6,7,8,9,};  // LED pin array
 // ----------------------------------------
 
 #define GATE_ACTION_TIMEOUT 120000 // timeout for gate actions
+
+#define GATE_DELAY_DIAL_VS_SOUND 300  // delay between sound and dial move
+#define GATE_DELAY_CHEVRON_VS_SOUND 100 // delay between sound and chevron move
+#define GATE_DELAY_CHEVRON_LOCK_DURATION 1800 // duration of chevron lock in ms
+#define GATE_DELAY_WORMHOLE_DISCONNECT_PLAYTIME 2000 // duration of wormhole disconnect playtime
+#define GATE_DELAY_TO_NEXT_CHEVRON_DIAL 1500 // delay between chevron dialing
+#define GATE_WORMHOLE_CONNECT_PLAYTIME 4000   // duration of wormhole connect playtime before wormhole established playtime
+#define GATE_WORMHOLE_ESTABLISHED_PLAYTIME_REPEAT 18000 // duration of wornmhole established playtime before the re-play is launched
 
 // set the number of motor steps for the gate and chevron
 #define GATE_SYMBOLS 39
