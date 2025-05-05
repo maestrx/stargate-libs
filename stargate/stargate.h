@@ -1,17 +1,10 @@
 // version 0.1, 1.4.2025
 // version 0.2, 6.4.2025
-
-
-// MP3 -> COM9
-// DHD -> COM18 (old BL)
-// GATE -> COM16
+// version 0.3, 5.5.2025
 
 // ----------------------------------------
 // COMMON
 // ----------------------------------------
-
-// indicate if usign real or fake gate
-//#define FAKE_GATE 1
 
 // I2C debug on Gate&MP3
 #define DEBUG_I2C false
