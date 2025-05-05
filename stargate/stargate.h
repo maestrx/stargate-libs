@@ -110,7 +110,7 @@ int DHD_Chevron_LED[] = {2,3,4,5,6,7,8,9,};  // LED pin array
 #define GATE_DELAY_DIAL_VS_SOUND 300  // delay between sound and dial move
 #define GATE_DELAY_CHEVRON_VS_SOUND 100 // delay between sound and chevron move
 #define GATE_DELAY_CHEVRON_LOCK_DURATION 1800 // duration of chevron lock in ms
-#define GATE_DELAY_WORMHOLE_DISCONNECT_PLAYTIME 2000 // duration of wormhole disconnect playtime
+#define GATE_DELAY_WORMHOLE_CONNECT_PLAYTIME 2000 // duration of wormhole connect playtime before wormhole conencted playtime
 #define GATE_DELAY_TO_NEXT_CHEVRON_DIAL 1500 // delay between chevron dialing
 #define GATE_WORMHOLE_CONNECT_PLAYTIME 4000   // duration of wormhole connect playtime before wormhole established playtime
 #define GATE_WORMHOLE_ESTABLISHED_PLAYTIME_REPEAT 18000 // duration of wornmhole established playtime before the re-play is launched
